@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 id="title">Developer Survey</h1>
+    <p id="description">Please complete the form below, thank you.</p>
+
+    <form action="" method="" id="survey-form">
+      <div class="content-form">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+
+      <div class="content-form">
+        <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="content-form">
+        <label for="number" id="number-label">Age</label>
+        <input type="number" id="number" name="number" min="16" max="50" placeholder="Enter your age">
+      </div>
+
+      <div class="content-form">
+        <label for="dropdown" id="dropdown-label">Which option best describes your current role?</label>
+        <select id="dropdown" name="dropdown">
+          <option value="" selected disabled>Select current role</option>
+          <option value="Student">Student</option>
+          <option value="Full Time Worker">Full Time Worker</option>
+          <option value="Full Time Learner">Full Time Learner</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <div class="content-form">
+        <label for="feedback" id="feedback-label">Would you satisfy of using our service?</label>
+        <div class="checkbox-item">
+          <input type="radio" name="feedback" id="feedback1" value="1">
+          <label for="feedback1">Yes</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="radio" name="feedback" id="feedback2" value="2">
+          <label for="feedback2">No</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="radio" name="feedback" id="feedback3" value="3">
+          <label for="feedback3">Maybe</label>
+        </div>
+      </div>
+        
+      <div class="content-form">
+        <label for="favorite" id="favorite-label">What is your favorite field?</label>
+        <div class="checkbox-item">
+          <input type="checkbox" id="favorite1" value="Front-End Developer">
+          <label for="favorite1">Front-End Developer</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="favorite2" value="Back-End Developer">
+          <label for="favorite3">Back-End Developer</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="favorite3" value="Mobile Developer">
+          <label for="favorite3">Mobile Developer</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="favorite4" value="Data Scientist">
+          <label for="favorite4">Data Scientist</label>
+        </div>
+      </div>
+
+      <div class="content-form">
+        <label for="comments" id="comments-label">Any comments or suggestions?</label>
+        <textarea id="comments" cols="30" rows="4"></textarea>
+      </div>
+
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>

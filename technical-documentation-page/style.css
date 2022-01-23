@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+nav#navbar {
+  height: 100%;
+  width: 280px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-right: 16px;
+  border-right: 2px solid #eeeeee;
+}
+
+nav#navbar header {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 16px;
+  background-color: white;
+  position: fixed;
+  width: 278px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+nav#navbar ul {
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin-top: 72px;
+  height: 85%;
+}
+
+nav#navbar ul li {
+  list-style: none;
+  width: 100%;
+}
+
+nav#navbar ul li a.nav-link {
+  display: block;
+  text-decoration: none;
+  color: #181818;
+  padding: 16px;
+}
+
+nav#navbar ul li a.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #cccccc;
+}
+
+#main-doc {
+  position: absolute;
+  margin: 2rem 2rem 2rem 20rem;
+  padding: 0 32px 32px 32px;
+  border: 2px solid #eeeeee;
+  border-radius: 8px;
+}
+
+.main-section {
+  padding-top: 32px;
+}
+
+.main-section header {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.main-section article p,
+.main-section article ul li {
+  margin-bottom: 8px;
+  line-height: 1.7;
+}
+
+.main-section article ul {
+  margin-bottom: 8px;
+  margin-left: 24px;
+}
+
+.main-section article .code {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding: 8px 12px 12px 12px;
+  border: 1px solid #eeeeee;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  line-height: 2;
+}
+
+@media only screen and (max-width: 768px) {
+  nav#navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50%;
+    border-bottom: 2px solid #eeeeee;
+    text-align: center;
+  }
+
+  nav#navbar header {
+    width: 100%;
+    position: relative;
+  }
+
+  nav#navbar ul {
+    margin-top: 16px;
+    height: 70%;
+    border: 1px solid #eeeeee;
+    margin-left: 16px;
+    border-radius: 8px;
+  }
+
+  #main-doc {
+    margin: 366px 1rem 5rem 1rem;
+    z-index: -1;
+    border: 1px solid #eeeeee;
+  }
+}
